@@ -9,6 +9,13 @@
   font-size: 900%;
   font-family: monospace;
 }
+.div_date{
+  position: absolute;
+  font-family: calibri;
+  font-size: 200%;
+  bottom: 5%;
+  left: 5%;
+}
 .delim{
   font-size: 900%;
   font-family: calibri;
@@ -35,8 +42,8 @@
 }
 .location{
   position: absolute;
-  left: 40%;
-  top: 48%;
+  left: 34%;
+  top: 46%;
   font-size: 140%;
   font-weight: 100;
 }
@@ -58,14 +65,25 @@
   font-size: 900%;
   transform: translate(-50%,-50%);
 }
-.div_date{
-  position: absolute;
+
+.weather-description{
   font-family: calibri;
-  font-size: 200%;
-  bottom: 5%;
-  left: 5%;
+  position: absolute;
+  font-size: 180%;
+  top: 32%;
+  left: 82%;
+  font-style: italic;
+  font-weight: bold;
 }
 
 body{
   background-color: black;
+}
+
+.tt{
+  color: white;
+  position: absolute;
+  width: 22%;
+  left: 78%;
+  top: 24%;
 }
