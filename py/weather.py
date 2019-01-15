@@ -13,7 +13,7 @@ def getCurrentWeather(city_name="Bengaluru"):
 			 "temp": celsius,
 	 		 "mintemp": min_temp,
 			 "maxtemp": max_temp,
-			 "weather": weather_page['weather'][0]['description'],
+			 "description": weather_page['weather'][0]['description'].capitalize(),
 			 "pressure": weather_page['main']['pressure'],
 			 "humidity": weather_page['main']['humidity'],
 			 "icon": weather_page['weather'][0]['icon']
