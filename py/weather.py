@@ -7,4 +7,14 @@ def getCurrentWeather(city_name="Bengaluru"):
 	response = requests.get(complete_url)
 	weather_page = response.json()
 	celsius = weather_page['main']['temp'] - 273.15
-	return celsius, weather_page['weather'][0]['description'], weather_page['weather'][0]['icon']
+	min_temp = weather_page['main']['temp_min'] - 273.15
+	max_temp = weather_page['main']['temp_max'] - 273.15
+	return {
+			 "temp": celsius,
+	 		 "mintemp": min_temp,
+			 "maxtemp": max_temp,
+			 "weather": weather_page['weather'][0]['description'],
+			 "pressure": weather_page['main']['pressure'],
+			 "humidity": weather_page['main']['humidity'],
+			 "icon": weather_page['weather'][0]['icon']
+			}
